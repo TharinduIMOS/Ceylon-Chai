@@ -11,6 +11,37 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			
+			.typing-effect {
+				font-size: 20px;
+				font-weight: normal;
+				color: yellow;
+				border-right: 2px solid yellow;
+				white-space: nowrap;
+				overflow: hidden;
+				width: 0;
+				animation: typing 4s steps(40, end) forwards, blink 0.7s step-end infinite alternate;
+			}
+	
+			@keyframes typing {
+				from { width: 0; }
+				to { width: 100%; }
+			}
+	
+			@keyframes blink {
+				from { border-color: transparent; }
+				to { border-color: yellow; }
+			}
+		</style>
+		<style>
+		
+			.large-light-text {
+				font-size: 50px;   /* Large font size */
+				font-weight: 100;  /* Light font weight */
+				color: #ffffff;       /* Text color */
+			}
+		</style>
 	</head>
 	<body class="is-preload landing">
 		<div id="page-wrapper">
@@ -48,9 +79,10 @@
 				<section id="banner">
 					<div class="content">
 						<header>
-							<h2>Ceylon Chai</h2>
-							<p>And there are no hoverboards or flying cars.<br />
-							Just apps. Lots of mother flipping apps.</p>
+							<div class="large-light-text">
+								Ceylon Chai
+							</div>
+							<p class="typing-effect">ඔබේ දවසේ ප්‍රබෝධමත් චායී පානය</p>
 						</header>
 						<span class="image"><img src="images/logo.jpg" alt="" /></span>
 					</div>
@@ -65,7 +97,7 @@
 							<div class="row">
 								<div class="col-4 col-12-medium">
 									<header>
-										<h2>Ceyon Chai</h2>
+										<h2>Ceylon Chai</h2>
 										<p>The Essence of Ceylon Chai</p>
 									</header>
 								</div>
@@ -94,12 +126,19 @@
 					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
 					<div class="content">
 						<header>
-							<h2>Interdum amet non magna accumsan</h2>
-							<p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
+							<h2>අපේ සිලෝන් චායි පැකේජ වල විශේෂත්වය</h2>
+							<p>Benifits of Choosing Us</p>
 						</header>
-						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<p>
+
+							ශ්‍රේෂ්ඨ සිලෝන් තේ: ශ්‍රී ලංකාවේ ප්‍රසන්න තේ වතු අසැණින් සෘජුව ලබාගත්.<br>
+							ඇලකටු (කඩලේ): ඔබේ චායි වලට සුවඳ සහ මෘදු රසයක් එකතු කරයි.<br>
+							කුරුඳු: උණුසුම් හා රසවත් හැඟීමක් ලබා දේ.<br>
+							කරඹු: මනස්කාන්ත සුවඳක් හා ගැඹුරු රසයක් ගෙන එයි.<br>
+							උඳු: ශක්තිමත්, ශරීරය ගොඩනඟන රසය.<br>
+							වෙනත් සුවඳ සහිත ගුණවත් කුළුබඩු: සම්ප්‍රදායත් සමඟ නවීන රසවින්දනයක්.</p>
 						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
+							<li><a href="https://wa.me/94714622953" class="button">ඇනවුම් කිරීමට Click කරන්න</a></li>
 						</ul>
 					</div>
 					<a href="#three" class="goto-next scrolly">Next</a>
@@ -110,12 +149,15 @@
 					<span class="image fit main bottom"><img src="images/pic04.jpg" alt="" /></span>
 					<div class="content">
 						<header>
-							<h2>Interdum felis blandit praesent sed augue</h2>
+							<h2>Ceylon Chai ප්‍රයෝජනවත් ඇයි?</h2>
 							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
 						</header>
-						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<p>ආශ්වාසය සහ සත්‍යතාව: සත්කාරකමකින් පිරුණු උසස් තේ.
+							ස්වභාවික බව: කෘතිම රසායනරහිත, පරිසර හිතකාමී ආකාරයෙන් නිෂ්පාදනය.
+							පහසුව සහ වේගය: පිළිවෙලට සකස් කළ පැකේජ එකක් මිනිත්තු කිහිපයක් තුළ සූදානම් කරගත හැක.
+							සෞඛ්‍ය වාසි: තේ මනෝභාවය දියුණු කරන විශේෂ ඖෂධ ගුණවලින් පිරී ඇත.</p>
 						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
+							<li><a href="https://wa.me/94714622953" class="button">ඇනවුම් කිරීමට Click කරන්න</a></li>
 						</ul>
 					</div>
 					<a href="#four" class="goto-next scrolly">Next</a>
@@ -125,18 +167,18 @@
 				<section id="four" class="wrapper style1 special fade-up">
 					<div class="container">
 						<header class="major">
-							<h2>Accumsan sed tempus adipiscing blandit</h2>
-							<p>Iaculis ac volutpat vis non enim gravida nisi faucibus posuere arcu consequat</p>
+							<h2>අපේ Ceylon Chai වල අඩංගු ද්‍රව්‍ය</h2>
+							<p>Ingredients</p>
 						</header>
 						<div class="box alt">
 							<div class="row gtr-uniform">
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-chart-area"></span>
+									<span class="icon solid alt major fas fa-seedling"></span>
 									<h3>Ipsum sed commodo</h3>
 									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-comment"></span>
+									<span class="icon solid alt major fas fa-leaf"></span>
 									<h3>Eleifend lorem ornare</h3>
 									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
 								</section>
