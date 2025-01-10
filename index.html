@@ -76,6 +76,112 @@
   }
 }
 		</style>
+
+<style>
+
+
+#wrap {
+  position: absolute;
+  top: 60%; /* Move the cup up slightly */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px; /* Adjusted smaller width for the cup */
+}
+
+#steam {
+  position: absolute;
+  width: 50px; /* Adjusted width for steam */
+  height: 50px; /* Adjusted height for steam */
+  background-color: white;
+  border-radius: 50%;
+  margin-left: 25px; /* Centering the steam */
+  margin-top: -25px; /* Centering the steam */
+  z-index: 0;
+  opacity: 0;
+}
+
+.steam-one {
+  animation: steam-one 4s ease-out infinite;
+}
+
+.steam-three {
+  animation: steam-one 4s ease-out 1s infinite;
+}
+
+@keyframes steam-one {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.25);
+    opacity: 0.25;
+  }
+  100% {
+    transform: translateY(-120px) translateX(10px) scale(1);
+    opacity: 0;
+  }
+}
+
+.steam-two {
+  animation: steam-two 4s ease-out 0.5s infinite;
+}
+
+.steam-four {
+  animation: steam-two 4s ease-out 1.5s infinite;
+}
+
+@keyframes steam-two {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.25);
+    opacity: 0.25;
+  }
+  100% {
+    transform: translateY(-120px) translateX(-10px) scale(1);
+    opacity: 0;
+  }
+}
+
+.cup-body {
+  position: absolute;
+  width: 100%;
+  height: 120px; /* Reduced height */
+  background-color: white;
+  border-radius: 0 0 80px 80px; /* Adjusted bottom radius */
+  overflow: hidden;
+  z-index: 1;
+}
+
+.cup-shade {
+  position: absolute;
+  width: 160px; /* Adjusted width */
+  height: 180px; /* Adjusted height */
+  margin-left: 50%;
+  margin-top: -10px;
+  transform: rotate(50deg);
+  background-color: #ebebeb;
+}
+
+.cup-handle {
+  position: absolute;
+  top: 20%; /* Adjust the vertical alignment of the handle */
+  left: 100%; /* Position handle to the right side of the cup */
+  width: 50px; /* Adjusted width */
+  height: 60px; /* Adjusted height */
+  border: 10px solid #ebebeb;
+  border-radius: 0 60px 100px 0; /* Adjusted curvature */
+  transform: translateX(10px); /* Fine-tune the position of the handle */
+}
+
+.saurce {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10px; /* Reduced height */
+  border-radius: 0 0 80px 80px;
+  background-color: white;
+  z-index: 2;
+}
+
+
+
+</style>
 		<style>
 			
 			.fade-in {
@@ -172,13 +278,28 @@
 				<section id="banner">
 					<div class="content">
 						<header>
+							<span class="image"><img src="images/logo.jpg" alt="" /></span>
 							<div class="container">
  
       <h3 class="animate-charcter"> Ceylon Chai</h3>
-   
-							<p class="fade-in">The Essence of Ceylon Chai</p>
+   <p class="fade-in">The Essence of Ceylon Chai</p>
 						</header>
-						<span class="image"><img src="images/logo.jpg" alt="" /></span>
+						<div id="wrap">
+      <div id="steam" class="steam-one"></div>
+      <div id="steam" class="steam-two"></div>
+      <div id="steam" class="steam-three"></div>
+      <div id="steam" class="steam-four"></div>
+
+      <div id="cup">
+            <div class="cup-body">
+                  <div class="cup-shade"></div>                        
+            </div>
+            <div class="cup-handle"></div>
+            <div class="saurce"></div>
+      </div>
+</div>
+      
+
 					</div>
 					<a href="#one" class="goto-next scrolly">Next</a>
 				</section>
