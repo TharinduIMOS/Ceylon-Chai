@@ -13,25 +13,18 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
 			
-			.typing-effect {
-				font-size: 20px;
-				font-weight: normal;
-				color: yellow;
-				border-right: 2px solid yellow;
-				white-space: nowrap;
-				overflow: hidden;
-				width: 0;
-				animation: typing 4s steps(40, end) forwards, blink 0.7s step-end infinite alternate;
+			.fade-in {
+				opacity: 0; /* Initially invisible */
+				animation: fadeInAnimation 5s forwards; /* 3s duration for the fade-in */
 			}
 	
-			@keyframes typing {
-				from { width: 0; }
-				to { width: 100%; }
-			}
-	
-			@keyframes blink {
-				from { border-color: transparent; }
-				to { border-color: yellow; }
+			@keyframes fadeInAnimation {
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 1;
+				}
 			}
 		</style>
 		<style>
@@ -39,7 +32,7 @@
 			.large-light-text {
 				font-size: 50px;   /* Large font size */
 				font-weight: 100;  /* Light font weight */
-				color: #ffffff;       /* Text color */
+				color: #ffa9a9;       /* Text color */
 			}
 		</style>
 	</head>
@@ -48,7 +41,7 @@
 
 			<!-- Header -->
 				<header id="header">
-					<h1 id="logo"><a href="index.html">Landed</a></h1>
+					<h1 id="logo"><a href="index.html">CEYLON CHAI</a></h1>
 					<nav id="nav">
 						<ul>
 							<li><a href="index.html">Home</a></li>
@@ -82,7 +75,7 @@
 							<div class="large-light-text">
 								Ceylon Chai
 							</div>
-							<p class="typing-effect">ඔබේ දවසේ ප්‍රබෝධමත් චායී පානය</p>
+							<p class="fade-in">ඔබේ දවසේ ප්‍රබෝධමත් චායී පානය</p>
 						</header>
 						<span class="image"><img src="images/logo.jpg" alt="" /></span>
 					</div>
@@ -150,7 +143,7 @@
 					<div class="content">
 						<header>
 							<h2>Ceylon Chai ප්‍රයෝජනවත් ඇයි?</h2>
-							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+							<p>Importance of Ceylon Chai</p>
 						</header>
 						<p>ආශ්වාසය සහ සත්‍යතාව: සත්කාරකමකින් පිරුණු උසස් තේ.
 							ස්වභාවික බව: කෘතිම රසායනරහිත, පරිසර හිතකාමී ආකාරයෙන් නිෂ්පාදනය.
