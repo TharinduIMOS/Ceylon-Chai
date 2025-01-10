@@ -31,7 +31,7 @@
 		</style>
 
 <style>
-	
+
 
 	.neon-btn {
 		padding: 20px 40px;
@@ -46,6 +46,8 @@
 		cursor: pointer;
 		position: relative;
 		overflow: hidden;
+		box-shadow: 0 0 30px 15px rgba(0, 255, 255, 0.8); /* Always glowing effect */
+		text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.4); /* Text always glowing */
 		transition: all 0.3s ease;
 	}
 
@@ -60,11 +62,6 @@
 		filter: blur(15px);
 		z-index: -1;
 		animation: neonGlow 1.5s ease-in-out infinite;
-	}
-
-	.neon-btn:hover {
-		box-shadow: 0 0 30px 15px rgba(0, 255, 255, 0.8);
-		text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.4);
 	}
 
 	@keyframes neonGlow {
