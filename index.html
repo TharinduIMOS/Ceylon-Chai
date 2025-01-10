@@ -26,7 +26,62 @@
 					opacity: 1;
 				}
 			}
+
+			
 		</style>
+
+<style>
+	
+
+	.neon-btn {
+		padding: 20px 40px;
+		font-size: 20px;
+		font-weight: bold;
+		color: #fff;
+		background-color: #111;
+		border: 2px solid #fff;
+		border-radius: 10px;
+		text-transform: uppercase;
+		outline: none;
+		cursor: pointer;
+		position: relative;
+		overflow: hidden;
+		transition: all 0.3s ease;
+	}
+
+	.neon-btn:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 255, 255, 0.5);
+		filter: blur(15px);
+		z-index: -1;
+		animation: neonGlow 1.5s ease-in-out infinite;
+	}
+
+	.neon-btn:hover {
+		box-shadow: 0 0 30px 15px rgba(0, 255, 255, 0.8);
+		text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.4);
+	}
+
+	@keyframes neonGlow {
+		0% {
+			transform: scale(1);
+			opacity: 0.5;
+		}
+		50% {
+			transform: scale(1.1);
+			opacity: 1;
+		}
+		100% {
+			transform: scale(1);
+			opacity: 0.5;
+		}
+	}
+</style>
 		<style>
 		
 			.large-light-text {
@@ -131,8 +186,9 @@
 							උඳු: ශක්තිමත්, ශරීරය ගොඩනඟන රසය.<br>
 							වෙනත් සුවඳ සහිත ගුණවත් කුළුබඩු: සම්ප්‍රදායත් සමඟ නවීන රසවින්දනයක්.</p>
 						<ul class="actions">
-							<li><a href="https://wa.me/94714622953" class="button">ඇනවුම් කිරීමට Click කරන්න</a></li>
-						</ul>
+							<a href="https://wa.me/94714622953" target="_blank">
+								<button class="neon-btn">Chat on WhatsApp</button>
+							</a>
 					</div>
 					<a href="#three" class="goto-next scrolly">Next</a>
 				</section>
